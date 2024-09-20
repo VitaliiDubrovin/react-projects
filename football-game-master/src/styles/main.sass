@@ -1,0 +1,48 @@
+@import './_variables'
+@import './_mixins'
+
+*
+  box-sizing: border-box
+  outline: none
+
+html,
+body
+  height: 100%
+  overflow-x: hidden
+
+body 
+  position: relative
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  color: $main-text-color
+  background-color: $main-background-color
+  font-size: $main-text-size
+
+code 
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+//Accordion
+.accordion
+  background-color: #eee
+  color: #444
+  cursor: pointer
+  padding: 18px
+  width: 100%
+  text-align: left
+  border: none
+  outline: none
+  transition: 0.4s
+
+  &.active,
+  &:hover
+    background-color: #ccc
+
+.panel
+  padding: 0 18px
+  background-color: white
+  display: none
+  overflow: hidden
+
+

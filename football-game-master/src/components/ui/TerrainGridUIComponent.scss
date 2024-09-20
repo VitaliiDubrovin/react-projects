@@ -1,0 +1,29 @@
+.terrain-grid {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.grid-cell {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  min-width: 53px;
+  min-height: 53px;
+  color: #ccc;
+}
+
+.odd {
+  background-color: #10a501;
+}
+
+.even {
+  background-color: #009106;
+}
+
+.grid-row {
+  display: flex;
+}
+
